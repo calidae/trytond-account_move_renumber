@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trytonspain-account_move_renumber"
+dependencies = [
+    "trytond-account_invoice~=6.8.0",
+]
+version = "6.8"
+
+dynamic = ["classifiers", "license", "readme", "description"]
+
+[project.entry-points."trytond.modules"]
+account_move_renumber = "trytond.modules.account_move_renumber"
+
+[project.scripts]
+[project.gui-scripts]
